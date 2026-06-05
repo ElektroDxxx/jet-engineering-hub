@@ -2,8 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JET Engineering Hub</title>
     <style>
         body { margin: 0; padding: 0; background: #0b0e14; }
         .container {
@@ -12,33 +10,34 @@
             max-width: 1920px;
             margin: 0 auto;
         }
-        .bg-image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        /* Стили кнопок */
+        .bg-image { width: 100%; height: auto; display: block; }
+        
+        /* Видимые кнопки для настройки */
         .nav-btn {
             position: absolute;
-            /* Чтобы подогнать кнопки, временно раскомментируй эти две строки */
-            /* border: 2px solid #00f2ff; */
-            /* background: rgba(0, 255, 255, 0.2); */
+            border: 2px solid #00f2ff;
+            background: rgba(0, 255, 255, 0.3);
             text-decoration: none;
-            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            border-radius: 6px;
             cursor: pointer;
-            width: 8.2%;
-            height: 5.5%;
-            border-radius: 10px;
+            /* Квадратный размер */
+            width: 7.2%;
+            height: 5.2%;
         }
-        .nav-btn:hover { background: rgba(0, 255, 255, 0.2); }
 
-        /* Позиции */
-        .btn-anl  { top: 51.5%; left: 50%; transform: translate(-50%, -50%); width: 7%; height: 4%; }
-        .btn-core { bottom: 9.8%; left: 19.1%; }
-        .btn-jr   { bottom: 9.8%; left: 33.3%; }
-        .btn-mid  { bottom: 9.8%; left: 47.5%; }
-        .btn-sr   { bottom: 9.8%; left: 61.7%; }
-        .btn-lead { bottom: 9.8%; left: 75.9%; }
+        /* Позиционирование - двигаем всё вверх и плотнее */
+        .btn-anl  { top: 48.0%; left: 50%; transform: translate(-50%, -50%); width: 8%; height: 4.5%; }
+        .btn-core { bottom: 12.5%; left: 20.8%; }
+        .btn-jr   { bottom: 12.5%; left: 34.0%; }
+        .btn-mid  { bottom: 12.5%; left: 47.2%; }
+        .btn-sr   { bottom: 12.5%; left: 60.4%; }
+        .btn-lead { bottom: 12.5%; left: 73.6%; }
     </style>
 </head>
 <body>
@@ -46,12 +45,12 @@
 <div class="container">
     <img src="background.png" alt="JET Engineering" class="bg-image">
     
-    <a href="URL_АНАЛИТИКА" class="nav-btn btn-anl"></a>
-    <a href="URL_CORE" class="nav-btn btn-core"></a>
-    <a href="URL_JUNIOR" class="nav-btn btn-jr"></a>
-    <a href="URL_MIDDLE" class="nav-btn btn-mid"></a>
-    <a href="URL_SENIOR" class="nav-btn btn-sr"></a>
-    <a href="URL_LEAD" class="nav-btn btn-lead"></a>
+    <a href="#" class="nav-btn btn-anl">ANL</a>
+    <a href="#" class="nav-btn btn-core">CORE</a>
+    <a href="#" class="nav-btn btn-jr">JR</a>
+    <a href="#" class="nav-btn btn-mid">MID</a>
+    <a href="#" class="nav-btn btn-sr">SR</a>
+    <a href="#" class="nav-btn btn-lead">LEAD</a>
 </div>
 
 </body>
