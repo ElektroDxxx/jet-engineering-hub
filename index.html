@@ -1,1 +1,39 @@
-Привет, JET!
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        .hero {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+        .btn {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid #00f2ff;
+            color: white;
+            padding: 15px 30px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { background: rgba(0, 242, 255, 0.5); }
+        
+        /* Тут мы будем подгонять кнопки под чипы на картинке */
+        .btn-junior { top: 75%; left: 25%; }
+        .btn-middle { top: 75%; left: 40%; }
+        .btn-senior { top: 75%; left: 55%; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <a href="#" class="btn btn-junior">Junior</a>
+        <a href="#" class="btn btn-middle">Middle</a>
+        <a href="#" class="btn btn-senior">Senior</a>
+    </div>
+</body>
+</html>
