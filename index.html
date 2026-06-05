@@ -5,31 +5,28 @@
         body, html { margin: 0; padding: 0; height: 100%; background: #0b0e14; }
         .hero {
             background-image: url('background.png');
-            background-size: contain; /* Картинка целиком */
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: center top;
             height: 100vh;
             width: 100%;
             position: relative;
         }
-        /* Невидимая кнопка с эффектом объема */
         .btn {
             position: absolute;
-            width: 140px; /* Подгоняем под размер чипов */
+            width: 140px;
             height: 60px;
             cursor: pointer;
             border: none;
-            background: rgba(0, 255, 255, 0.05); /* Почти прозрачная */
+            background: rgba(0, 255, 255, 0.05);
             border-radius: 8px;
             transition: all 0.3s ease;
             box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
         }
-        /* Эффект при наведении: "подсветка" чипа */
         .btn:hover {
             background: rgba(0, 255, 255, 0.2);
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.2);
         }
-        /* Эффект нажатия: "проседание" */
         .btn:active {
             transform: scale(0.95);
             background: rgba(0, 255, 255, 0.3);
@@ -38,12 +35,12 @@
 </head>
 <body>
     <div class="hero">
-        <a href="#" class="btn" style="top: 83%; left: 18.5%;"></a>
-        <a href="#" class="btn" style="top: 83%; left: 32.5%;"></a>
-        <a href="#" class="btn" style="top: 83%; left: 46.5%;"></a>
-        <a href="#" class="btn" style="top: 83%; left: 60.5%;"></a>
-        <a href="#" class="btn" style="top: 83%; left: 74.5%;"></a>
-        <a href="#" class="btn" style="top: 55%; left: 47%;"></a>
+        <a href="#" id="btn-core" class="btn" style="top: 81%; left: 19.5%;"></a>
+        <a href="#" id="btn-junior" class="btn" style="top: 81%; left: 33.5%;"></a>
+        <a href="#" id="btn-middle" class="btn" style="top: 81%; left: 46.0%;"></a>
+        <a href="#" id="btn-senior" class="btn" style="top: 81%; left: 59.5%;"></a>
+        <a href="#" id="btn-lead" class="btn" style="top: 81%; left: 72.0%;"></a>
+        <a href="#" id="btn-analytics" class="btn" style="top: 44%; left: 45.8%;"></a>
     </div>
 </body>
 </html>
