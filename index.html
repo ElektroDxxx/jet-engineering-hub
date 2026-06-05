@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        body { margin: 0; padding: 0; background: #0b0e14; }
+        body { margin: 0; padding: 0; background: #0b0e14; overflow: hidden; }
         .container {
             position: relative;
             width: 100%;
@@ -14,24 +14,22 @@
         
         .nav-btn {
             position: absolute;
-            border: 2px solid #00f2ff;
-            background: rgba(0, 255, 255, 0.2);
-            color: white;
-            font-size: 10px;
-            font-weight: bold;
             text-decoration: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             cursor: pointer;
-            border-radius: 6px;
             width: 8.0%;
             height: 5.0%;
             transform: translate(-50%, -50%);
+            border-radius: 10px;
+            /* Эффект "молнии": легкая вспышка при наведении */
+            transition: all 0.3s ease;
         }
-        .nav-btn:hover { background: rgba(0, 255, 255, 0.4); }
+        
+        .nav-btn:hover {
+            box-shadow: 0 0 15px 5px rgba(0, 242, 255, 0.6);
+            background: rgba(255, 255, 255, 0.1);
+        }
 
-        /* Итоговые координаты с учетом последних сдвигов */
+        /* Координаты */
         .btn-anl  { top: 55.2%; left: 50.0%; }
         .btn-core { top: 86.0%; left: 23.1%; }
         .btn-jr   { top: 86.0%; left: 36.9%; }
@@ -45,12 +43,12 @@
 <div class="container">
     <img src="background.png" alt="JET Engineering" class="bg-image">
     
-    <a href="#" class="nav-btn btn-anl">ANL</a>
-    <a href="#" class="nav-btn btn-core">CORE</a>
-    <a href="#" class="nav-btn btn-jr">JR</a>
-    <a href="#" class="nav-btn btn-mid">MID</a>
-    <a href="#" class="nav-btn btn-sr">SR</a>
-    <a href="#" class="nav-btn btn-lead">LEAD</a>
+    <a href="https://docs.google.com/spreadsheets/d/1jXJbMaGhKpx_2N8TaGSfu8znwgn4F7-K-IukQ5ikpRQ/edit?usp=sharing" target="_blank" class="nav-btn btn-anl"></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSed5o4uyhn1SvSrulR2lxqi-tI9-ufLtUgXOsPwskRVrozLlA/viewform?usp=header" target="_blank" class="nav-btn btn-core"></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSctxF2y_Pg0MwSImyaK2BWU7tsxrcRcGCcZ_0-RBthOZJYjnA/viewform?usp=header" target="_blank" class="nav-btn btn-jr"></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScCpDxv9PiFAW_z1iL8kLgkrRDG4T1avNmpZEyraTR30sU2gg/viewform?usp=header" target="_blank" class="nav-btn btn-mid"></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSesWJwtu7pf_JVaZazFd7zH6dDbMUH8oQoaqYev6ILrDSBoCA/viewform?usp=header" target="_blank" class="nav-btn btn-sr"></a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScE2p6-db_QsoBsARSaahIxSayR8hvsy4_WCoBLznpK-3Biqg/viewform?usp=header" target="_blank" class="nav-btn btn-lead"></a>
 </div>
 
 </body>
