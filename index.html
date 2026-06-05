@@ -1,45 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; background: #0b0e14; overflow: hidden; }
-        .hero {
-            background-image: url('background.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center top;
-            height: 100vh;
-            width: 100%;
+        body { margin: 0; padding: 0; background: #0b0e14; }
+        .container {
             position: relative;
+            width: 100%;
+            max-width: 1920px; /* Ограничиваем макс ширину, чтобы не раздувало */
+            margin: 0 auto;
         }
-        /* Квадратные кнопки */
-        .btn {
+        .bg-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Общий стиль кнопок */
+        .nav-btn {
             position: absolute;
-            width: 8.5%;    /* Узкие, ближе к квадрату */
-            height: 6%;     /* Подогнано под высоту чипа */
-            cursor: pointer;
+            background: rgba(0, 255, 255, 0.15);
             border: 2px solid #00f2ff;
-            background: rgba(0, 255, 255, 0.2);
             color: white;
-            font-size: 11px;
+            text-decoration: none;
             font-weight: bold;
+            font-size: 10px; /* Уменьшил шрифт для компактности */
+            border-radius: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-decoration: none;
-            border-radius: 6px;
-            text-align: center;
+            transition: 0.3s;
+            /* Размеры для "квадратности" */
+            width: 7.5%; 
+            height: 5%;
+        }
+        .nav-btn:hover { background: rgba(0, 255, 255, 0.4); }
+
+        /* Позиции для нижнего ряда (расстояние между ними сокращено) */
+        .btn-core { bottom: 8.5%; left: 19.5%; }
+        .btn-jr   { bottom: 8.5%; left: 32.5%; }
+        .btn-mid  { bottom: 8.5%; left: 45.5%; }
+        .btn-sr   { bottom: 8.5%; left: 58.5%; }
+        .btn-lead { bottom: 8.5%; left: 71.5%; }
+
+        /* Позиция для Аналитики (она вернулась) */
+        .btn-anl {
+            top: 45%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 9%;
+            height: 6%;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <a href="#" class="btn" style="top: 77.2%; left: 18.2%;">CORE</a>
-        <a href="#" class="btn" style="top: 77.2%; left: 32.4%;">JR</a>
-        <a href="#" class="btn" style="top: 77.2%; left: 46.5%;">MID</a>
-        <a href="#" class="btn" style="top: 77.2%; left: 60.7%;">SR</a>
-        <a href="#" class="btn" style="top: 77.2%; left: 74.9%;">LEAD</a>
-        <a href="#" class="top: 48.0%; left: 46.5%;">ANL</a>
-    </div>
+
+<div class="container">
+    <img src="background.png" alt="JET Engineering" class="bg-image">
+    
+    <a href="#" class="nav-btn btn-anl">ANL</a>
+
+    <a href="#" class="nav-btn btn-core">CORE</a>
+    <a href="#" class="nav-btn btn-jr">JR</a>
+    <a href="#" class="nav-btn btn-mid">MID</a>
+    <a href="#" class="btn-sr nav-btn">SR</a>
+    <a href="#" class="nav-btn btn-lead">LEAD</a>
+</div>
+
 </body>
 </html>
