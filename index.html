@@ -2,15 +2,20 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { margin: 0; padding: 0; background: #0b0e14; overflow: hidden; }
+        body { margin: 0; padding: 0; background: #0b0e14; }
         .container {
             position: relative;
             width: 100%;
             max-width: 1920px;
             margin: 0 auto;
         }
-        .bg-image { width: 100%; height: auto; display: block; }
+        .bg-image { 
+            width: 100%; 
+            height: auto; 
+            display: block; 
+        }
         
         .nav-btn {
             position: absolute;
@@ -20,8 +25,8 @@
             height: 5.0%;
             transform: translate(-50%, -50%);
             border-radius: 10px;
-            /* Эффект "молнии": легкая вспышка при наведении */
             transition: all 0.3s ease;
+            z-index: 10;
         }
         
         .nav-btn:hover {
