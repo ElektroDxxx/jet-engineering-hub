@@ -2,7 +2,7 @@
 <html>
 <head>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; background: #0b0e14; }
+        body, html { margin: 0; padding: 0; height: 100%; background: #0b0e14; overflow: hidden; }
         .hero {
             background-image: url('background.png');
             background-size: contain;
@@ -14,12 +14,12 @@
         }
         .btn {
             position: absolute;
-            width: 140px;
-            height: 60px;
+            width: 12%;  /* Процент от ширины экрана */
+            height: 8%;  /* Процент от высоты экрана */
             cursor: pointer;
             border: none;
             background: rgba(0, 255, 255, 0.05);
-            border-radius: 8px;
+            border-radius: 12px;
             transition: all 0.3s ease;
             box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
         }
@@ -27,20 +27,16 @@
             background: rgba(0, 255, 255, 0.2);
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), inset 0 0 5px rgba(255, 255, 255, 0.2);
         }
-        .btn:active {
-            transform: scale(0.95);
-            background: rgba(0, 255, 255, 0.3);
-        }
     </style>
 </head>
 <body>
     <div class="hero">
-        <a href="#" id="btn-core" class="btn" style="top: 81%; left: 19.5%;"></a>
-        <a href="#" id="btn-junior" class="btn" style="top: 81%; left: 33.5%;"></a>
-        <a href="#" id="btn-middle" class="btn" style="top: 81%; left: 46.0%;"></a>
-        <a href="#" id="btn-senior" class="btn" style="top: 81%; left: 59.5%;"></a>
-        <a href="#" id="btn-lead" class="btn" style="top: 81%; left: 72.0%;"></a>
-        <a href="#" id="btn-analytics" class="btn" style="top: 44%; left: 45.8%;"></a>
+        <a href="URL_CORE" class="btn" style="top: 77.5%; left: 18.0%;"></a>
+        <a href="URL_JUNIOR" class="btn" style="top: 77.5%; left: 32.2%;"></a>
+        <a href="URL_MIDDLE" class="btn" style="top: 77.5%; left: 46.4%;"></a>
+        <a href="URL_SENIOR" class="btn" style="top: 77.5%; left: 60.7%;"></a>
+        <a href="URL_LEAD" class="btn" style="top: 77.5%; left: 74.9%;"></a>
+        <a href="URL_ANALYTICS" class="btn" style="top: 50.5%; left: 46.4%;"></a>
     </div>
 </body>
 </html>
